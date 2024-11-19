@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import api from "../../shared/api/api";
+import HomeCars from "../../components/home/HomeCars";
+import HomeServices from "../../components/home/HomeServices";
+import HomeAbout from "../../components/home/HomeAbout";
 
 const HomePage = () => {
   const [brands, setBrands] = useState([]);
- 
-    useEffect(() => {
-      api.get("/brands").then((res) => setBrands(res?.data?.data));
-    }, []);
 
+  useEffect(() => {
+    api.get("/brands").then((res) => setBrands(res?.data?.data));
+  }, []);
   console.log(brands);
+  
 
   return (
     <div className="bg-black w-full text-white">
@@ -28,23 +31,21 @@ const HomePage = () => {
         <img src="/cars/car2.png" alt="car" />
         <img src="/cars/car3.png" alt="car" />
         <img src="/cars/car4.png" alt="car" />
-        {/* <img
-          src="data:image/svg+xml,%3csvg%20width='91'%20height='17'%20viewBox='0%200%2091%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%2016H89.5L74.5%201'%20stroke='white'/%3e%3c/svg%3e"
-          alt="right arrow"
-        />
-        <img
-          src="data:image/svg+xml,%3csvg%20width='92'%20height='17'%20viewBox='0%200%2092%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M91.5%2016H2L17%201'%20stroke='white'/%3e%3c/svg%3e"
-          alt="left arrow"
-        /> */}
       </div>
       <div className="my-5">
         <h3>Brands</h3>
+        <div className="grid grid-cols-6 gap-10 overflow-x-auto mx-28">
         {brands.map((item, i) => (
-          <>
-            <p key={i}>{item?.title}</p>
-          </>
+          <div key={i} className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10">
+            <img src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`} className="w-[3rem]" alt={item?.title} />
+            <p>{item?.title}</p>
+          </div>
         ))}
+        </div>
       </div>
+      <HomeCars />
+      <HomeServices />
+      <HomeAbout />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import NotFound from "../../pages/notfound/NotFound";
 import MainWrapper from "../../global/MainWrapper";
 import HomePage from "../../pages/home/HomePage";
-import CarsPage from "../../pages/cars/CarsPage";
+import CarsPage from "../../pages/CarsPage/CarsPage";
 
 
 const router = createBrowserRouter(
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
         },
         {
           path: "/cars",
-          element: <CarsPage />,
+          element: <CarsPage/>
         },
         // {
         //   path: "/cars/:id",

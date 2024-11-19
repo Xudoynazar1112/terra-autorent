@@ -17,7 +17,7 @@ const Navbar = () => {
           className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6"
           placeholder="Search ..."
         />
-        <img src="/images/logo.png" alt="logo" className="w-32" />
+        <Link to={'/'}><img src="/images/logo.png" alt="logo" className="w-32" /></Link>
       </div>
       <div className="flex flex-col items-end">
         <ul className="flex gap-10">
