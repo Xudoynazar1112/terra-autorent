@@ -8,7 +8,7 @@ const HomePage = () => {
   });
   return (
     <div>
-      <h2>cars</h2>
+      <h2 className="text-red-800 m-8">cars</h2>
       {cars?.map((car) => (
         <p>{car?.model?.name}</p>
       ))}
