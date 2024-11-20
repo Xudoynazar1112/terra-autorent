@@ -3,6 +3,7 @@ import api from "../../shared/api/api";
 import HomeCars from "../../components/home/HomeCars";
 import HomeServices from "../../components/home/HomeServices";
 import HomeAbout from "../../components/home/HomeAbout";
+import HomeFAQ from "../../components/home/HomeFAQ";
 
 const HomePage = () => {
   const [brands, setBrands] = useState([]);
@@ -10,7 +11,6 @@ const HomePage = () => {
   useEffect(() => {
     api.get("/brands").then((res) => setBrands(res?.data?.data));
   }, []);
-  console.log(brands);
   
 
   return (
@@ -26,13 +26,13 @@ const HomePage = () => {
       <p className="cursor-pointer">
         RENT A CAR EMIRATES CATALOG <span>»</span>
       </p>
-      <div className="flex gap-20 my-10 overflow-x-auto">
+      <div className="flex gap-20 overflow-x-auto bg-gradient-to-b from-black to-slate-400">
         <img src="/cars/car1.png" alt="car" />
         <img src="/cars/car2.png" alt="car" />
         <img src="/cars/car3.png" alt="car" />
         <img src="/cars/car4.png" alt="car" />
       </div>
-      <div className="my-5">
+      <div className="bg-gradient-to-b from-slate-400 to-black">
         <h3>Brands</h3>
         <div className="grid grid-cols-6 gap-10 overflow-x-auto mx-28">
         {brands.map((item, i) => (
@@ -46,6 +46,7 @@ const HomePage = () => {
       <HomeCars />
       <HomeServices />
       <HomeAbout />
+      <HomeFAQ />
     </div>
   );
 };
