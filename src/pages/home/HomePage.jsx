@@ -15,10 +15,10 @@ const HomePage = () => {
 
   return (
     <div className="bg-black w-full text-white">
-      <h2 className="mt-32 text-[24px] font-semibold">
+      <h2 className="mt-32 text-[2.5rem] font-semibold">
         TOP LUXURY CAR RENTAL EMIRATES
       </h2>
-      <p>№</p>
+      <p className="text-[2.5rem]">№1</p>
       <p className="my-5">
         Best sports car & supercar rental Emirates, Exclusive offers on luxury
         car rental Emirates Cheap price
