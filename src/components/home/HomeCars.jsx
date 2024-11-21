@@ -31,7 +31,6 @@ const HomeCars = () => {
 
     fetchCars();
   }, []);
-  console.log(categories);
 
   return (
     <div className="container mx-auto px-4 bg-gradient-to-b from-black to-slate-700 py-10">
@@ -48,9 +47,9 @@ const HomeCars = () => {
           </div>
   
           {/* Cars Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {categories[category].map((item) => (
-              <div
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {categories[category].slice(0, 3).map((item) => (
+              <Link to={`/cars/${item.id}`}
                 key={item.id}
                 className="bg-gray-800 p-4 rounded-lg shadow-lg text-white transition-all hover:bg-indigo-700"
               >
@@ -62,7 +61,7 @@ const HomeCars = () => {
                       : "https://via.placeholder.com/300"
                   }
                   alt={item?.model?.name || "Car image"}
-                  className="w-full h-40 object-cover rounded-md mb-4"
+                  className="w-full h-56 object-cover rounded-md mb-4"
                 />
   
                 {/* Car Details */}
@@ -74,7 +73,7 @@ const HomeCars = () => {
                   {item?.price_in_usd || "0"}
                 </p>
                 <p className="text-sm text-gray-400">per day</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

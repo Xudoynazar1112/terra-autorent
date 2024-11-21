@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "car": "CARS",
+        "brand": "BRANDS",
+        "service": "SERVICES",
+        "about": "ABOUT US",
+        "contact": "CONTACT",
+        "blog": "BLOG"
+    }
+}
