@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../shared/api/api";
 
-const HomePage = () => {
+const HomePage = () => {  
   const [cars, setCars] = useState([]);
   useEffect(() => {
     api.get("/cars").then((res) => setCars(res?.data?.data));
