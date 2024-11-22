@@ -32,8 +32,8 @@ const Footer = () => {
     fetchCars();
   }, []);
   return (
-    <div className="bg-black text-white px-40 py-20 flex">
-      <div className="flex flex-col items-start w-1/4">
+    <div className="bg-black text-white md:px-40 px-10 py-20 flex md:flex-row flex-col gap-5">
+      <div className="flex flex-col items-start md:w-1/4">
         <img className="w-28" src="/images/logo.png" alt="logo" />
         <p className="text-start text-4xl my-5 font-bold">
           LUXURY CAR RENTAL IN EMIRATES
@@ -46,11 +46,11 @@ const Footer = () => {
           GET BEST OFFER
         </p>
       </div>
-      <div className="w-3/4 flex flex-col items-center bg-[url('/cars/footer.png')] bg-right-bottom saturate-50 bg-cover">
+      <div className="md:w-3/4 flex flex-col gap-5 items-center bg-[url('/cars/footer.png')] bg-right-bottom saturate-50 bg-cover">
         <div className="bg-gradient-to-r from-black/70 via-gray-900/70 to-black">
-          <div className="grid grid-cols-3 place-items-center items-start">
+          <div className="grid grid-cols-3 place-items-center gap-5 items-start">
             <div className="flex flex-col gap-2 items-start">
-              <p className="text-3xl mb-3">Cars</p>
+              <p className="md:text-3xl text-md mb-3">Cars</p>
               {Object.keys(categories).map((car, i) => (
                 <p key={i} className="text-gray-500 text-start">
                   {car}

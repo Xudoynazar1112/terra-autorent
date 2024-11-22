@@ -4,11 +4,11 @@ const HomeAbout = () => {
   return (
     <>
       <section className="bg-[#272933] relative">
-        <div className="text-start text-white py-14 px-36 relative z-[1]">
-          <h3 className="text-[3rem]  font-semibold">
+        <div className="text-start text-white py-14 md:px-36 px-8 relative z-[1]">
+          <h3 className="md:text-[3rem] text-2xl font-semibold">
             LUXURY CAR RENTAL IN EMIRATES
           </h3>
-          <p className="leading-[30px]">
+          <p className="md:leading-[30px] md:text-base text-sm">
             Are you ready to feel the adrenaline rush and unleash your inner
             speed demon? Look no further than Terra luxury car rental Dubai, the
             city where dreams become reality. In this ultimate guide to sports
@@ -18,10 +18,10 @@ const HomeAbout = () => {
             rental Dubai style, turning heads and leaving everyone in awe of
             your style. Whether you are a car enthusiast or simply looking to
           </p>
-          <h3 className="text-[3rem] font-semibold mt-[30px]">
+          <h3 className="md:text-[3rem] text-2xl font-semibold mt-[30px]">
             What are the requirements to rent a luxury car in Dubai?
           </h3>
-          <p className="leading-[30px]">
+          <p className="md:leading-[30px] md:text-base text-sm">
             To rent a car Dubai, it&apos;s enough to have a valid driving
             license and enough funds. & you&apos;ll need to show your foreign
             passport and prove that you have come of age and have driving
@@ -44,7 +44,7 @@ const HomeAbout = () => {
           </p>
         </div>
         <img
-          className="absolute top-0 left-0 h-full opacity-70 w-44"
+          className="absolute top-0 left-0 h-full opacity-70"
           src="/cars/left-car.png"
           alt="left car"
         />
@@ -54,11 +54,11 @@ const HomeAbout = () => {
           alt="right car"
         />
       </section>
-      <div className="py-14 flex gap-14">
+      <div className="py-14 flex md:flex-row flex-col md:gap-14 gap-5 md:px-0 px-2">
         <iframe
-          width="57%"
-          height="530"
-          className="pt-7"
+          // width="57%"
+          // height="530"
+          className="pt-7 md:w-[57%] md:h-[30rem] w-full h-60"
           src="https://www.youtube.com/embed/rsHmvxJ86PA?si=aaCwO20t0Afat04C"
           title="YouTube video player"
           frameBorder="0"
@@ -66,12 +66,12 @@ const HomeAbout = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div className="w-[33%] pr-20 relative">
+        <div className="md:w-[33%] md:pr-20 relative">
           <div className="z-20 flex flex-col items-start">
-            <h3 className="text-[2.3rem] text-start leading-[2.5rem] tracking-widest">
+            <h3 className="md:text-[2.3rem] text-2xl text-start md:leading-[2.5rem] tracking-widest">
               SPORTS CAR RENTAL DUBAI
             </h3>
-            <p className="text-start text-[1.3rem] py-7">
+            <p className="text-start md:text-[1.3rem] text-lg py-7">
               Terra L L C a Car is a Top Luxury Car Rental Dubai based company,
               We offer sports car rental, and supercar rental in Dubai. The best
               luxury car rental process provided by our fleet . We own a diverse
@@ -87,14 +87,14 @@ const HomeAbout = () => {
           <img
             src="/images/bg-tower.png"
             alt=" about tower"
-            className="absolute w-[23rem] right-0 top-0 z-10 opacity-60"
+            className="absolute md:w-[23rem] w-[15rem] right-0 top-0 z-10 opacity-60"
           />
         </div>
       </div>
-      <div className="flex bg-gray-900 gap-10">
-        <div className="bg-gray-800 bg-[url('/images/about-car.webp')] bg-no-repeat bg-cover bg-center w-[50%] h-[18rem]"></div>
-        <div className="flex flex-col items-start py-10">
-          <h4 className="text-5xl pb-3 font-semibold">SUPERCAR RENTAL DUBAI</h4>
+      <div className="flex md:flex-row flex-col bg-gray-900 gap-10">
+        <div className="bg-gray-800 bg-[url('/images/about-car.webp')] bg-no-repeat bg-cover bg-center md:w-[50%] h-[18rem]"></div>
+        <div className="flex flex-col items-start py-10 md:px-0 px-3">
+          <h4 className="md:text-5xl text-3xl pb-3 font-semibold">SUPERCAR RENTAL DUBAI</h4>
           <p className="text-lg">Hire the latest supercar</p>
           <Link to={"/cars"} className="text-start text-white hover:text-red-500 transition-all mt-12">
             ALL CARS

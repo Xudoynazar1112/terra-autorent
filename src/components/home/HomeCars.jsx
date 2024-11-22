@@ -61,7 +61,7 @@ const HomeCars = () => {
                       : "https://via.placeholder.com/300"
                   }
                   alt={item?.model?.name || "Car image"}
-                  className="w-full h-56 object-cover rounded-md mb-4"
+                  className="w-full md:h-56 h-28 object-cover rounded-md mb-4"
                 />
   
                 {/* Car Details */}

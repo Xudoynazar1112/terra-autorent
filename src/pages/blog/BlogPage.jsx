@@ -1,13 +1,13 @@
 const BlogPage = () => {
   return (
-    <div className="bg-gray-900 text-white px-40 py-20">
+    <div className="bg-gray-900 text-white md:px-40 px-10 py-20">
       <p className="text-4xl pb-10 text-start">BLOG</p>
       <div className="bg-gray-800 p-7 flex flex-col gap-10 pb-14">
-        <div className="flex h-[15rem] gap-10">
-          <div className="w-1/4">
+        <div className="flex md:flex-row flex-col md:h-[15rem] md:gap-10">
+          <div className="md:w-1/4">
             <img className="w-full h-full" src="/images/blog1.jpg" alt="blog image 1" />
           </div>
-          <div className="flex flex-col items-start justify-between w-3/4">
+          <div className="flex flex-col items-start justify-between md:w-3/4">
             <p className="text-3xl text-start">
               Top 3 Destinations to Visit in Dubai in a Rental Car
             </p>
@@ -20,11 +20,11 @@ const BlogPage = () => {
             <p>25 Seb 2022</p>
           </div>
         </div>
-        <div className="flex h-[15rem] gap-10">
-          <div className="w-1/4">
+        <div className="flex md:flex-row flex-col md:h-[15rem] md:gap-10">
+          <div className="md:w-1/4">
             <img className="w-full h-full" src="/images/blog2.jpg" alt="blog image 1" />
           </div>
-          <div className="flex flex-col items-start justify-between w-3/4">
+          <div className="flex flex-col items-start justify-between md:w-3/4">
             <p className="text-3xl text-start">
               Top 5 wonderful spots for a car photo session in Dubai
             </p>
@@ -41,11 +41,11 @@ const BlogPage = () => {
             <p>11 Feb 2022</p>
           </div>
         </div>
-        <div className="flex h-[15rem] gap-10">
-          <div className="w-1/4">
+        <div className="flex md:flex-row flex-col md:h-[15rem] md:gap-10">
+          <div className="md:w-1/4">
             <img className="w-full h-full" src="/images/blog3.jpg" alt="blog image 1" />
           </div>
-          <div className="flex flex-col items-start justify-between w-3/4">
+          <div className="flex flex-col items-start justify-between md:w-3/4">
             <p className="text-3xl text-start">
               Top 5 Reasons to Rent a Car Dubai Style this Summer
             </p>
