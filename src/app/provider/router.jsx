@@ -3,6 +3,12 @@ import NotFound from "../../pages/notFound/NotFound";
 import MainWrapper from "../../global/MainWrapper";
 import HomePage from "../../pages/home/HomePage";
 import CarsPage from "../../pages/CarsPage/CarsPage";
+import BrandsPage from "../../pages/brands/BrandsPage";
+import ServicePage from "../../pages/services/ServicePage";
+import ServiceDetailPage from "../../pages/services/ServiceDetailPgae";
+import AboutPage from "../../pages/about/AboutPage";
+import ContactPage from "../../pages/contact/ContactPage";
+import BlogPage from "../../pages/blog/BlogPage";
 
 
 const router = createBrowserRouter(
@@ -23,26 +29,30 @@ const router = createBrowserRouter(
         //   path: "/cars/:id",
         //   element: <CarsDetailPage />,
         // },
-        // {
-        //   path: "/services",
-        //   element: <ServicesPage />,
-        // },
-        // {
-        //   path: "/brands",
-        //   element: <BrandsPage />,
-        // },
-        // {
-        //   path: "/about",
-        //   element: <AboutPage />,
-        // },
-        // {
-        //   path: "/contact",
-        //   element: <ContactPage />,
-        // },
-        // {
-        //   path: "/blog",
-        //   element: <BlogPage />,
-        // },
+        {
+          path: "/services",
+          element: <ServicePage />,
+        },
+        {
+          path: "/services/detail",
+          element: <ServiceDetailPage />,
+        },
+        {
+          path: "/brand",
+          element: <BrandsPage />,
+        },
+        {
+          path: "/about",
+          element: <AboutPage />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
+        },
+        {
+          path: "/blog",
+          element: <BlogPage />,
+        },
         {
           path: "*",
           element: <NotFound />,
