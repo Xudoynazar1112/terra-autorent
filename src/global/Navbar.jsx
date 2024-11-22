@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <input
           type="text"
-          className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6"
+          className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6 text-white"
           placeholder="Search ..."
         />
         <Link to={'/'}><img src="/images/logo.png" alt="logo" className="w-32" /></Link>

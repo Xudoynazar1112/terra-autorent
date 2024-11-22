@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
-const HomeServices = () => {
+const ServicePage = () => {
   return (
-    <div className="flex flex-col justify-start px-28 py-10 bg-gray-900">
+    <div className="flex flex-col justify-start px-28 py-10 bg-gray-900 w-full text-white">
       <p className="text-start">Luxury Cars for Rent in Dubai / Services</p>
       <div className="flex gap-10 mt-10">
         <div className="w-[25rem] flex flex-col gap-5 justify-start items-start">
@@ -14,7 +14,7 @@ const HomeServices = () => {
             Experience the thrill of a dune buggy tour in Dubai with us. We
             offer free hotel pick-up & drop-off service. Book now
           </p>
-          <Link to={"/services/detail"} className="text-white">LEARN MORE</Link>
+          <Link to={"/services/detail"} className="text-white hover:text-red-600 transition-all">LEARN MORE</Link>
         </div>
         <div className="w-[25rem] flex flex-col gap-5 justify-start items-start">
           <img src="/cars/service2.jpg" alt="service 1" className="rounded" />
@@ -25,11 +25,11 @@ const HomeServices = () => {
             Professional car photoshoot as an additional type of service at
             Terra Car Rental
           </p>
-          <Link to={"/services/detail"} className="text-white">LEARN MORE</Link>
+          <Link to={"/services/detail"} className="text-white hover:text-red-600 transition-all">LEARN MORE</Link>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomeServices;
+export default ServicePage
