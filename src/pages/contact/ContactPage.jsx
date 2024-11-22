@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const ContactPage = () => {
   return (
-    <div className="bg-gray-900 w-full text-white flex flex-col items-start px-40 py-10">
+    <div className="bg-gray-900 w-full text-white flex flex-col items-start md:px-40 px-10 py-10">
       <p className="text-gray-400">Luxury Cars for Rent in Dubai / Contacts</p>
       <p className="text-4xl py-10">HAVE ANY QUESTIONS?</p>
       <p className="text-gray-400">We will be glad to help</p>

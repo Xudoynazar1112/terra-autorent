@@ -71,11 +71,11 @@ const HomeFAQ = () => {
           </div>
         </div>
       </div>
-      <div className="my-20">
-        <h3 className="text-start text-4xl ml-32 mb-10">
+      <div className="md:my-20 my-10">
+        <h3 className="md:text-start text-4xl md:ml-32 mb-10">
           FOLLOW US ON INSTAGRAM
         </h3>
-        <div className="flex overflow-hidden insta mx-32 gap-2">
+        <div className="flex overflow-hidden insta md:mx-32 mx-10 gap-2">
           <img src="/insta/img1.jpg" alt="insta img" />
           <img src="/insta/img2.jpg" alt="insta img" />
           <img src="/insta/img3.webp" alt="insta img" />
@@ -84,7 +84,7 @@ const HomeFAQ = () => {
           <img src="/insta/img6.webp" alt="insta img" />
         </div>
       </div>
-      <div className="flex gap-10 ml-32">
+      <div className="flex gap-10 md:ml-32 pl-10">
         <div className="flex flex-col items-start">
           <h4 className="text-4xl mb-5">LOCATION</h4>
           {locate.map((place, i) => (

@@ -7,9 +7,9 @@ const BrandsPage = () => {
     api.get("/brands").then((res) => setBrand(res?.data?.data));
   });
   return (
-    <div className="bg-gradient-to-b from-slate-400 to-black text-white">
+    <div className="bg-gradient-to-b from-slate-400 to-black text-white w-full">
       <h3 className="text-6xl my-5 text-white">Brands</h3>
-      <div className="grid grid-cols-6 gap-10 overflow-x-auto mx-28">
+      <div className="grid md:grid-cols-6 grid-cols-2 gap-10 overflow-x-auto md:mx-28 mx-10">
         {brand.map((item, i) => (
           <div
             key={i}

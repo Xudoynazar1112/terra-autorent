@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <div className="bg-gray-900 text-white text-start w-full flex flex-col items-start px-40 py-20">
+    <div className="bg-gray-900 text-white text-start w-full flex flex-col items-start md:px-40 px-10 py-20">
       <h5 className="text-4xl">ABOUT US</h5>
       <p className="text-2xl py-3">
         Welcome to Auto Zoom Car Rental Co LLC – Your Partner in Unforgettable

@@ -5,14 +5,12 @@ import HomeServices from "../../components/home/HomeServices";
 import HomeAbout from "../../components/home/HomeAbout";
 import HomeFAQ from "../../components/home/HomeFAQ";
 
-
 const HomePage = () => {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
     api.get("/brands").then((res) => setBrands(res?.data?.data));
   }, []);
-  
 
   return (
     <div className="bg-black w-full text-white">
@@ -35,14 +33,20 @@ const HomePage = () => {
       </div>
       <div className="bg-gradient-to-b from-slate-400 to-black">
         <h3>Brands</h3>
-        <div className="grid grid-cols-6 gap-10 overflow-x-auto mx-28">
-        
-        {brands.map((item, i) => (
-          <div key={i} className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10">
-            <img src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`} className="w-[3rem]" alt={item?.title} />
-            <p>{item?.title}</p>
-          </div>
-        ))}
+        <div className="grid md:grid-cols-6 grid-cols-2 gap-10 overflow-x-auto md:mx-28 mx-10">
+          {brands.map((item, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10"
+            >
+              <img
+                src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`}
+                className="w-[3rem]"
+                alt={item?.title}
+              />
+              <p>{item?.title}</p>
+            </div>
+          ))}
         </div>
       </div>
       <HomeCars />
