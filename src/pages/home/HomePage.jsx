@@ -5,6 +5,117 @@ import HomeServices from "../../components/home/HomeServices";
 import HomeAbout from "../../components/home/HomeAbout";
 import HomeFAQ from "../../components/home/HomeFAQ";
 
+const Carousel = () => {
+  const images = [
+    "/cars/car1.png", // Replace with your image URLs
+    "/cars/car2.png", // Replace with your image URLs
+    "/cars/car3.png", // Replace with your image URLs
+    "/cars/car4.png",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(1); // Start from 1 (middle section for smooth loop)
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const extendedImages = [images[images.length - 1], ...images, images[0]]; // Clone first and last images
+
+  // Handle Next Click
+  const handleNext = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+  };
+
+  // Handle Prev Click
+  const handlePrev = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => prevIndex - 1);
+  };
+
+  // Reset position for seamless looping
+  useEffect(() => {
+    if (currentIndex === 0) {
+      // Jump to the last real image
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(images.length);
+      }, 300); // Match this timeout to transition duration
+      return () => clearTimeout(timeout);
+    }
+
+    if (currentIndex === extendedImages.length - 1) {
+      // Jump to the first real image
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(1);
+      }, 300);
+      return () => clearTimeout(timeout);
+    }
+
+    // Enable transitions for other cases
+    const timeout = setTimeout(() => {
+      setIsTransitioning(false);
+    }, 300);
+    return () => clearTimeout(timeout);
+  }, [currentIndex, extendedImages.length, images.length]);
+
+  // Auto-scroll effect
+  useEffect(() => {
+    const autoScroll = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(autoScroll);
+  }, []);
+
+  return (
+    <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+      {/* Carousel track */}
+      <div
+        className={`flex transition-transform duration-300 ease-in-out ${
+          isTransitioning ? "" : "duration-0"
+        }`}
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
+        {extendedImages.map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-full flex justify-center items-center"
+          >
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className={`w-4/5 rounded-lg shadow-md transition-transform ${
+                index === currentIndex
+                  ? "scale-110 opacity-100"
+                  : "scale-100 opacity-75"
+              }`}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Previous Button */}
+      <button
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition"
+        onClick={handlePrev}
+      >
+        &lt;
+      </button>
+
+      {/* Next Button */}
+      <button
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition"
+        onClick={handleNext}
+      >
+        &gt;
+      </button>
+    </div>
+  );
+};
+
 const HomePage = () => {
   const [brands, setBrands] = useState([]);
 
@@ -25,14 +136,9 @@ const HomePage = () => {
       <p className="cursor-pointer">
         RENT A CAR EMIRATES CATALOG <span>»</span>
       </p>
-      <div className="flex gap-20 overflow-x-auto bg-gradient-to-b from-black to-slate-400">
-        <img src="/cars/car1.png" alt="car" />
-        <img src="/cars/car2.png" alt="car" />
-        <img src="/cars/car3.png" alt="car" />
-        <img src="/cars/car4.png" alt="car" />
-      </div>
+      <Carousel />
       <div className="bg-gradient-to-b from-slate-400 to-black">
-        <h3>Brands</h3>
+        <h3 className="text-3xl py-10">Brands</h3>
         <div className="grid md:grid-cols-6 grid-cols-2 gap-10 overflow-x-auto md:mx-28 mx-10">
           {brands.map((item, i) => (
             <div

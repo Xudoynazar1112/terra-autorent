@@ -63,6 +63,9 @@ const CarsPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  console.log(uniqueBrand);
+  
+
 
   return (
     <div className="w-[98.9vw] flex gap-20 p-4 bg-gray-900">
