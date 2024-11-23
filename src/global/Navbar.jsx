@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="w-full py-5 md:px-28 px-10 flex justify-between items-center gap-7 bg-black">
+      <nav className="w-full py-5 px-10 flex justify-between items-center gap-7 bg-black max-xl:px-8 ">
         <div className="flex items-center gap-5">
           <div className="flex gap-3 items-center">
             <button
@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           <input
             type="text"
-            className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6 text-white md:block hidden"
+            className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6 text-white md:block hidden "
             placeholder="Search ..."
           />
           <Link to={"/"}>

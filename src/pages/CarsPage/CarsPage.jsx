@@ -56,7 +56,7 @@ const CarsPage = () => {
   };
 
   const goToDetails = (id) => {
-    navigate(`/details/${id}`);
+    navigate(`/cars/${id}`);
   };
 
   useEffect(() => {
