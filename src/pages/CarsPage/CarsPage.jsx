@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import terra from "../../assets/icons/terra.png";
 import { FaWhatsapp } from "react-icons/fa";
