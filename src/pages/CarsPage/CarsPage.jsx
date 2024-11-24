@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import terra from "../../assets/icons/terra.png";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiTelegramLine } from "react-icons/ri";
@@ -9,12 +9,16 @@ const CarsPage = () => {
   const [uniqueType, setUniqueType] = useState([]);
   const [uniqueBrand, setUniqueBrand] = useState([]);
   const [selectedType, setSelectedType] = useState([]);
-  const [optionItems, setOptionItems] = useState([]);
-  const [options, setOptions] = useState([]);
-  const [selectedModel, setSelectedModel] = useState("");
+  const [optionItems, setOptionItems] = useState([]); 
+  const [options, setOptions] = useState([]); 
+  const [selectedModel, setSelectedModel] = useState(""); 
   const [showFilters, setShowFilters] = useState(false);
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const queryParams = new URLSearchParams(location.search);
+  const brandId = queryParams.get("brandId");
 
   useEffect(() => {
     const fetchCars = async () => {
@@ -22,14 +26,15 @@ const CarsPage = () => {
         const response = await fetch("https://realauto.limsa.uz/api/cars");
         const data = await response.json();
         setCars(data.data);
-        const uniqueTypeSet = new Set(
-          data.data.map((item) => item.category.name_en)
-        );
+
+     
+        const uniqueTypeSet = new Set(data.data.map((item) => item.category.name_en));
         setUniqueType([...uniqueTypeSet]);
-        const uniqueBrandSet = new Set(
-          data.data.map((item) => item.brand.title)
-        );
+
+
+        const uniqueBrandSet = new Set(data.data.map((item) => item.brand.title));
         setUniqueBrand([...uniqueBrandSet]);
+
         const models = [...new Set(data.data.map((item) => item?.model?.name))];
         setOptions(models);
       } catch (error) {
@@ -40,23 +45,24 @@ const CarsPage = () => {
     fetchCars();
   }, []);
 
+
   const filteredCars = cars.filter((car) => {
     const typeMatch =
       selectedType.length === 0 || selectedType.includes(car.category.name_en);
     const brandMatch =
-      optionItems.length === 0 || optionItems.includes(car.brand.title);
+      !brandId || car.brand.id === brandId; 
     const modelMatch = selectedModel === "" || car.model.name === selectedModel;
     return typeMatch && brandMatch && modelMatch;
   });
 
   const resetFilters = () => {
     setSelectedType([]);
-    setOptionItems([]);
-    setSelectedModel("");
+    setOptionItems([]); 
+    setSelectedModel(""); 
   };
 
   const goToDetails = (id) => {
-    navigate(`/details/${id}`);
+    navigate(`/cars/${id}`);
   };
 
   useEffect(() => {
@@ -65,7 +71,6 @@ const CarsPage = () => {
 
   return (
     <div className="w-full flex flex-col lg:flex-row bg-gray-900">
-      {/* Sidebar Filters */}
       <div
         className={`${
           showFilters ? "block" : "hidden lg:block"
@@ -83,7 +88,6 @@ const CarsPage = () => {
         <p className="text-left text-2xl mt-8">Filter by</p>
         <hr className="my-4" />
         <div>
-          {/* Car Types */}
           <p className="text-left text-2xl mb-4">Car type</p>
           <div>
             {uniqueType?.map((item) => (
@@ -106,7 +110,6 @@ const CarsPage = () => {
             ))}
           </div>
           <hr className="my-4" />
-          {/* Brands */}
           <p className="text-left text-2xl mb-4">Brand</p>
           <div>
             {uniqueBrand?.map((item) => (
@@ -128,7 +131,6 @@ const CarsPage = () => {
               </div>
             ))}
           </div>
-          {/* Model */}
           <p className="text-left text-2xl my-4">Model</p>
           <select
             value={selectedModel}
@@ -153,7 +155,6 @@ const CarsPage = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="flex-1 p-4">
         <button
           onClick={() => setShowFilters(true)}
@@ -173,7 +174,7 @@ const CarsPage = () => {
               <img
                 onClick={() => goToDetails(item.id)}
                 src={`https://realauto.limsa.uz/api/uploads/images/${item.car_images[0].image.src}`}
-                alt=""
+                alt="Car image"
                 className="w-full h-[200px] object-cover rounded-md cursor-pointer"
               />
               <p

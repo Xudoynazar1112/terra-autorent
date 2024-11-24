@@ -44,12 +44,12 @@ const HomeAbout = () => {
           </p>
         </div>
         <img
-          className="absolute top-0 left-0 h-full opacity-70"
+          className="absolute top-0 left-0 h-full opacity-70 md:block hidden"
           src="/cars/left-car.png"
           alt="left car"
         />
         <img
-          className="absolute top-0 right-0 h-full opacity-70"
+          className="absolute top-0 right-0 h-full opacity-70 md:block hidden"
           src="/cars/right-car.png"
           alt="right car"
         />
