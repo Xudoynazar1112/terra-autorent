@@ -9,6 +9,7 @@ import ServiceDetailPage from "../../pages/services/ServiceDetailPgae";
 import AboutPage from "../../pages/about/AboutPage";
 import ContactPage from "../../pages/contact/ContactPage";
 import BlogPage from "../../pages/blog/BlogPage";
+import Details from "../../pages/details/Details";
 
 
 const router = createBrowserRouter(
@@ -25,10 +26,10 @@ const router = createBrowserRouter(
           path: "/cars",
           element: <CarsPage/>
         },
-        // {
-        //   path: "/cars/:id",
-        //   element: <CarsDetailPage />,
-        // },
+        {
+          path: "/cars/:id",
+          element: <Details />,
+        },
         {
           path: "/services",
           element: <ServicePage />,

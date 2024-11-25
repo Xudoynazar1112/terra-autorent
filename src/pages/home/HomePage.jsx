@@ -4,6 +4,8 @@ import HomeCars from "../../components/home/HomeCars";
 import HomeServices from "../../components/home/HomeServices";
 import HomeAbout from "../../components/home/HomeAbout";
 import HomeFAQ from "../../components/home/HomeFAQ";
+import CarsPage from "../CarsPage/CarsPage";
+import BrandsPage from "../brands/BrandsPage";
 
 const Carousel = () => {
   const images = [
@@ -137,28 +139,7 @@ const HomePage = () => {
         RENT A CAR EMIRATES CATALOG <span>»</span>
       </p>
       <Carousel />
-      <div className="bg-gradient-to-b from-slate-400 to-black">
-        <h3 className="text-3xl py-10">Brands</h3>
-        <div className="grid md:grid-cols-6 grid-cols-2 gap-10 overflow-x-auto md:mx-28 mx-10">
-          {brands.map((item, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10 h-40"
-            >
-              <div className="h-1/2">
-                <img
-                  src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`}
-                  className="w-[3rem]"
-                  alt={item?.title}
-                />
-              </div>
-              <div className="h-1/2">
-                <p>{item?.title}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <BrandsPage/>
       <HomeCars />
       <HomeServices />
       <HomeAbout />
