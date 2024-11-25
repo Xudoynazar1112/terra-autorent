@@ -143,14 +143,18 @@ const HomePage = () => {
           {brands.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10"
+              className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10 h-40"
             >
-              <img
-                src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`}
-                className="w-[3rem]"
-                alt={item?.title}
-              />
-              <p>{item?.title}</p>
+              <div className="h-1/2">
+                <img
+                  src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`}
+                  className="w-[3rem]"
+                  alt={item?.title}
+                />
+              </div>
+              <div className="h-1/2">
+                <p>{item?.title}</p>
+              </div>
             </div>
           ))}
         </div>
