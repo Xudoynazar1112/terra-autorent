@@ -1,10 +1,131 @@
 {
-    "navbar": {
-        "car": "MASHINALAR",
-        "brand": "BRENDLAR",
-        "service": "XIZMATLAR",
-        "about": "BIZ HAQIMIZDA",
-        "contact": "ALOQA",
-        "blog": "BLOG"
+  "navbar": {
+    "car": "MASHINALAR",
+    "brand": "BRENDLAR",
+    "service": "XIZMATLAR",
+    "about": "BIZ HAQIMIZDA",
+    "contact": "ALOQA",
+    "blog": "BLOG",
+    "search": "Qidirish . . ."
+  },
+  "blog": {
+    "title": "BLOG",
+    "box1": {
+      "title": "Avtomobil ijarasi bilan Dubayga tashrif buyurish uchun eng yaxshi 3 ta joy",
+      "text": "Dubayda mashina ijaraga olishning asosiy sabablaridan biri bu sifat BAA yo'llari. Jahon iqtisodiy forumiga ko'ra, Amirliklar yo'l sharoitlari eng namunali bo'lgan yettilikdan joy olgan infratuzilma.",
+      "date": "Sen"
+    },
+    "box2":{
+        "title": "Dubayda avtomobil suratga olish uchun eng yaxshi 5 ta joy",
+        "text": "Dubayda qilinadigan juda ko'p ajoyib narsalar bor, lekin siz mashina ijaraga olganingizda, imkoniyatlaringiz deyarli ikki baravar ko'payadi. Borib, esda qolarli suratga tushmoqchi bo‘lgan joylar soni shundayki, transport vositasini ijaraga olish vasvasasiga qarshi tura olmaysiz, agar bir-ikki kun bo‘lmasa, hech bo‘lmaganda bir necha soat. Va buni amalga oshirayotganda, ijaraga olingan mashinada yoki uning atrofida suratga olish vasvasasiga kim qarshi tura oladi?",
+        "date": "Fev"
+    },
+    "box3":{
+        "title": "Bu yozda Dubay uslubida mashina ijaraga olishning eng yaxshi 5 ta sababi",
+        "text": "Yoz faqat plyaj va tana haqida emas, Autozoom Luxury Car Rental esa oddiy avtomobil ijarasi biznesidan ko'proqdir. Dubayda vaqtingizdan unumli foydalanish uchun biz sizning yagona to'rt g'ildirakli avtomobilingiz.",
+        "date": "Iyul"
+    }
+  },
+  "contact":{
+      "direction": "Dubayda hashamatli avtomobil ijarasi / Biz bilan bog'laning",
+      "title1": "SAVOLLAR BORMI?",
+      "direction2": "Biz yordam berishdan xursand bo'lamiz",
+      "title2": "Bosh idora",
+      "location": "Elite 3 Sports City, Dubay 26W8 24J, Birlashgan Arab Amirliklari"
+  },
+  "about": {
+    "title1": "BIZ HAQIMIZDA",
+    "text1": "Auto Zoom Car Rental Co LLC'ga xush kelibsiz – Dubaydagi unutilmas sayohatlar uchun sherigingiz!",
+    "text2": "Har bir safar sarguzashtga aylangan dunyoda, Auto Zoom Car Rental Co LLC sizga Dubay markazida noyob avtomobil ijarasi tajribasini taqdim etadi.",
+    "title2": "Nima uchun Auto Zoom?",
+    "span1": "Zamonaviy Avtomobillar Parki: ",
+    "desc1": "Biz sizga o‘z uslubingizga mos keladigan va ehtiyojlaringizni qondiradigan hashamatli avtomobillar parkidan tanlash imkoniyatini taqdim etamiz – ajoyib sedanlardan tortib kuchli SUV’largacha.",
+    "span2": "Dardni unuting: ",
+    "desc2": "Bizning maqsadimiz safaringizni imkon qadar qulay qilish. Moslashuvchan ijaraga olish shartlari, haydovchi bilan ijaraga olish imkoniyati va turli qo‘shimcha xizmatlar – bularning barchasi sizning qulayligingiz uchun.",
+    "span3": "Shaffoflik va Ishonch: ",
+    "desc3": "Biz har bir mijozni qadrlaymiz, shuning uchun narxlarimiz adolatli va shaffof. Hech qanday yashirin to‘lovlar va kutilmagan ajablanishlar yo‘q. Bizga ishonchingizni bildirgan holda, biz ijarangizni oddiy va tushunarli qilamiz.",
+    "span4": "Sizning ehtiyojlaringizga mos xizmat: ",
+    "desc4": "Bizning do‘stona va professional jamoamiz sizning g‘oyangizni amalga oshirishga tayyor. Bizning maqsadimiz – faqatgina avtomobil taqdim etish emas, balki siz uchun haqiqiy avtomobil tajribasini yaratish.",
+    "span5": "Bizning Missiyamiz: ",
+    "desc5": "Auto Zoom Car Rental Co LLC bir maqsad bilan yaratilgan – har bir sayohatni unutilmas qilish. Biz sizga faqat avtomobil emas, balki yangi tajribalar va sarguzashtlar kalitini taqdim etishga intilamiz.",
+    "span6": "Biz bilan bog‘laning: ",
+    "desc6": "Mutaxassislarga ishoning – Auto Zoom Car Rental Co LLC'ga ishoning. Bugun biz bilan bog‘laning va Dubayda stilize qilingan va ishonchli avtomobillarda ajoyib sayohatingizni boshlang. Sayohatingizning har bir lahzasidan bahramand bo‘lish imkoniyatini oling."
+},
+"services": {
+        "direction": "Dubayda hashamatli avtomobillarni ijaraga olish / Xizmatlar",
+        "title1": "Dubayda baggi minib, zavqlaning",
+        "text1": "Biz bilan Dubayda qumtepalarda baggi haydashning hayajonini his eting. Mehmonxonadan bepul olib ketish va qaytarish xizmatini taklif qilamiz. Endi buyurtma bering.",
+        "title2": "Dubayda hashamatli avtomobil ijarasi bilan fotosessiya",
+        "text2": "Terra Car Rental tomonidan qo'shimcha xizmat turi sifatida professional avtomobil fotosessiyasi",
+        "btn1": "KO'PROQ BILIB OLISH"
+    },
+    "services2": {
+        "direction": "Dubayda baggi minib, zavqlaning",
+        "title1": "Asosiy",
+        "person1": "bir kishi",
+        "person2": "ikki kishi",
+        "person3": "uch kishi",
+        "desc": "Dubayda baggi haydash. Cho'lda eng hayajonli sarguzashtni tanlang va keyin o'zingizni anʼanaviy arab mehmondo'stligi bilan siylang.",
+        "title2": "Paketga kiritilgan:",
+        "body_content1": "Oramizni lagerga premium transfer",
+        "body_content2": "Baggi haydash 1,5 soat",
+        "body_content3": "Burgut bilan suratga tushish",
+        "body_content4": "Tuya",
+        "body_content5": "VIP xona",
+        "body_content6": "Mevalar, ichimliklar, BBQ",
+        "btn": "HOZIR BUYURTMA QILING"
+    },
+    "footer": {
+        "title": "BIRLASHGAN ARAB AMIRLIKLARIDA HASHAMATLI AVTOMOBILLARNI IJARAGA OLISH",
+        "desc": "Oraliq shaxslarsiz to'g'ridan-to'g'ri sport va hashamatli avtomobillarni ijaraga oling. Dubayda Auto Zoom Car Rental bilan avtomobil ijaraga oling - xavfsizlik va haydash zavqi.",
+        "btn": "ENG YAXSHI TAKLIFNI OLING",
+        "type1": "Amirliklarda byudjet avtomobillarni ijaraga olish",
+        "type2": "Amirliklarda sport avtomobillarni ijaraga olish",
+        "type3": "Amirliklarda giperkarlarny ijaraga olish",
+        "type4": "Amirliklarda hashamatli avtomobillarni ijaraga olish",
+        "type5": "Amirliklarda SUV avtomobillarni ijaraga olish",
+        "type6": "Amirliklarda kabriolet avtomobillarni ijaraga olish",
+        "remote_working": "Ish vaqti: 24/7",
+        "team": "Bizning jamoamiz",
+        "country": "Birlashgan Arab Amirliklari.",
+        "footer_desc": "Shartlar va qoidalar",
+        "follow": "Bizni kuzatib boring",
+        "text1": "Avtomobillar",
+        "text2": "Blog",
+        "text3": "Xizmat",
+        "text4": "Kontakt",
+        "text5": "Biz haqimizda"
+    },
+    "cars_page": {
+        "title": "Dubayda hashamatli avtomobillarni ijaraga olish / Eng so'nggi superkarni ijaraga oling"
+    },
+    "home_page": {
+      "title1": "ENG ZO‘R HASAMATLI AVTOMOBILLARNI IJARAGA OLISH EMIRATLARDA",
+      "desc": "Eng yaxshi sport avtomobillari va superkarlarny ijaraga oling. Emiratlardagi hashamatli avtomobillar uchun maxsus takliflar va qulay narxlar",
+      "desc2": "EMIRATLARDA AVTOMOBIL IJARASI KATALOGI"
+    },
+    "home_about": {
+      "title": "EMIRATLARDA HASAMATLI AVTOMOBILLARNI IJARAGA OLISH",
+      "title2": "Dubayda hashamatli avtomobilni ijaraga olish uchun qanday talablar bor?",
+      "title3": "DUBAYDA SPORT AVTOMOBILLARNI IJARAGA OLISH",
+      "title4": "DUBAYDA SUPERKARLARNI IJARAGA OLISH",
+      "desc": "Adrenalinni his qilmoqchimisiz? Tezlikni sevuvchilarga mo‘ljallangan Terra Luxury Car Rental Dubai sizni kutmoqda! Ushbu qo‘llanmada Dubaydagi hashamatli avtomobillar va superkarlarning ajoyib dunyosiga olib boramiz. Tasavvur qiling, Shayx Zayd yo‘lida zamonaviy sport avtomobilida Dubay uslubida haydab ketmoqdasiz va atrofdagilarni qoyil qoldirmoqdasiz. Bu unutilmas tajriba bo‘ladi.",
+      "desc2": "Dubayda avtomobil ijarasi uchun amal qiluvchi haydovchilik guvohnomasi va mablag‘ yetarli. Shuningdek, pasportni ko‘rsatish va yoshga to‘lganingizni tasdiqlash kerak. G‘arb mamlakatlari haydovchilari milliy guvohnomalaridan foydalanishlari mumkin, boshqalarga esa xalqaro guvohnoma zarur. Haydovchining yoshi 21-25 yosh oralig‘ida bo‘lishi lozim. Ma‘lumot uchun biz bilan bog‘laning.",
+      "desc3": "Terra LLC — Dubayda hashamatli avtomobillarni ijaraga olishda yetakchi kompaniya. Bizda Rolls Royce, Lamborghini, Ferrari va boshqa brendlar bor. Dubaydagi eng yaxshi ijaraga murojaat qiling.",
+      "dsc4": "Eng yangi superkarni ijaraga oling",
+      "btn": "HAMMA AVTOMOBILLAR"
+    },
+    "home_faq": {
+      "title1": "Dubayda avtomobil ijarasi uchun minimal yosh qancha?",
+      "title2": "Hashamatli avtomobil ijarasida sug‘urta limiti qancha?",
+      "title3": "Qanday haydovchilik guvohnomalari qabul qilinadi?",
+      "title4": "Ijara olgan avtomobilni boshqasi boshqarsa bo‘ladimi?",
+      "desc1": "25 yoshdan kichik haydovchilar kamida 3 yillik guvohnomaga ega bo‘lishi kerak.",
+      "desc2": "Sug‘urta limiti avtomobil turiga bog‘liq. Batafsil ma‘lumot uchun ijara kompaniyasiga murojaat qiling.",
+      "desc3": "Odatda xalqaro yoki GCC guvohnomalari qabul qilinadi.",
+      "desc4": "Ha, agar ular qo‘shimcha haydovchi sifatida ro‘yxatga olingan bo‘lsa.",
+      "follow": "INSTAGRAM’DA OBUNA BO‘LING",
+      "location": "MANZIL",
+      "city": "SHAHAR"
     }
 }

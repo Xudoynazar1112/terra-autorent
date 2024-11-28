@@ -1,10 +1,131 @@
 {
-    "navbar": {
-        "car": "CARS",
-        "brand": "BRANDS",
-        "service": "SERVICES",
-        "about": "ABOUT US",
-        "contact": "CONTACT",
-        "blog": "BLOG"
+  "navbar": {
+    "car": "CARS",
+    "brand": "BRANDS",
+    "service": "SERVICES",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "blog": "BLOG",
+    "search": "Search . . ."
+  },
+  "blog": {
+    "title": "BLOG",
+    "box1": {
+      "title": "Top 3 Destinations to Visit in Dubai in a Rental Car",
+      "text": "One of the main reasons to hire a car in Dubai is the quality of the UAE roads. According to the World Economic Forum, the Emirates belong to the top seven countries with the most exemplary road infrastructure.",
+      "date": "Seb"
+    },
+    "box2": {
+      "title": "Top 5 wonderful spots for a car photo session in Dubai",
+      "text": "There are so many wonderful things to do in Dubai, but when you rent a car your opportunities are nearly doubled. The number of places you will die to go to and make memorable pictures is such that it makes you impossible to resist to hire a mode of transportation, if not for a day or two, then at least for a couple of hours. And, while doing so, who could prove against the weakness of taking a photo of themselves inside or near the car they’ve rented?",
+      "date": "Feb"
+    },
+    "box3": {
+      "title": "Top 5 Reasons to Rent a Car Dubai Style this Summer",
+      "text": "Summer is more than just a beach and a body, and Autozoom Luxury Car Rental is more than just a regular car hire business. We're your one-stop four-wheel solution to making the most of your time in Dubai.",
+      "date": "Jul"
     }
+  },
+  "contact": {
+    "direction": "Luxury Cars for Rent in Dubai / Contacts",
+    "title1": "HAVE ANY QUESTIONS?",
+    "direction2": "We will be glad to help",
+    "title2": "Head office",
+    "location": "Elite 3 Sports City, Dubai 26W8 24J, United Arab Emirates"
+  },
+  "about": {
+    "title1": "ABOUT US",
+    "text1": "Welcome to Auto Zoom Car Rental Co LLC – Your Partner in Unforgettable Journeys in Dubai!",
+    "text2": "In a world where every trip is an adventure, Auto Zoom Car Rental Co LLC offers you a unique car rental experience in the heart of Dubai.",
+    "title2": "Why Auto Zoom?",
+    "span1": "Elegant Car Fleet: ",
+    "desc1": "We provide you the opportunity to choose from our luxurious car fleet – from sleek sedans to powerful SUVs. We have a vehicle to match your style and meet your needs.",
+    "span2": "Worry-Free Rental: ",
+    "desc2": " Our goal is to make your journey as comfortable as possible. Flexible rental terms, the option to hire with a driver, and a wide range of additional services – all for your convenience.",
+    "span3": "Transparency and Trust: ",
+    "desc3": "We value every customer, so our prices are honest and transparent. No hidden fees, no unexpected surprises. Trust us, and we will make your rental experience straightforward and clear.",
+    "span4": "Service at Your Level: ",
+    "desc4": " Our friendly and professional team is ready to bring your ideas to life. We aim not just to provide a car but to create a genuine automotive experience for you.",
+    "span5": "Our Mission:",
+    "desc5": "Auto Zoom Car Rental Co LLC is created with one goal – to make every journey unforgettable. We strive to offer you not just a car but the key to new experiences and adventures.",
+    "span6": "Contact Us: ",
+    "desc6": "Trust the professionals – trust Auto Zoom Car Rental Co LLC. Get in touch with us today to start your exciting journey through Dubai in our stylish and reliable cars. Allow yourself to savor every moment of your trip."
+  },
+  "services": {
+    "direction": "Luxury Cars for Rent in Dubai / Services",
+    "title1": "Ride a buggy in Dubai and have fun",
+    "text1": "Experience the thrill of a dune buggy tour in Dubai with us. We offer free hotel pick-up & drop-off service. Book now",
+    "title2": "Photoshoot with luxury car rental Dubai",
+    "text2": "Professional car photoshoot as an additional type of service at Terra Car Rental",
+    "btn1": "LEARN MORE"
+  },
+  "services2": {
+    "direction": "Ride a buggy in Dubai and have fun",
+    "title1": "Basic",
+    "person1": "one person",
+    "person2": "two person",
+    "person3": "three person",
+    "desc": "Dune buggies in Dubai Book your ride on the most exciting adventure  activity to hit the desert and later pamper your self to a traditional Arabian hospitality.",
+    "title2": "Package Inclusions:",
+    "body_content1": "Premium Transfer to camp",
+    "body_content2": "Dune Buggy riding 1.5 hours",
+    "body_content3": "Falcone shoting",
+    "body_content4": "Camel",
+    "body_content5": "VIP room",
+    "body_content6": "Fruits, Drinks, BBQ",
+    "btn": "BOOK NOW"
+  },
+  "footer": {
+    "title": "LUXURY CAR RENTAL IN EMIRATES",
+    "desc": "Rent sports and luxury cars directly without intermediaries. Rent a car in Dubai with Auto Zoom Car Rental - safety and driving pleasure",
+    "btn": "GET BEST OFFER",
+    "type1": "Budget cars Rental Emirates",
+    "type2": "Sports cars Rental Emirates",
+    "type3": "Hyper Cars Rental Emirates",
+    "type4": "Luxury Cars Rental Emirates",
+    "type5": "Suv Cars Renal Emirates",
+    "type6": "Cabriolet cars rental Emirates",
+    "remote_working": "Working hours: 24/7",
+    "team": "Our team",
+    "country": "United Arab Emirates.",
+    "footer_desc": "Terms and Conditions",
+    "follow": "Follow us",
+    "text1": "Cars",
+    "text2": "Blog",
+    "text3": "Service",
+    "text4": "Contact",
+    "text5": "About"
+  },
+  "cars_page": {
+    "title": "Luxury Cars for Rent in Dubai / Hire the latest supercar"
+  },
+  "home_page": {
+    "title1": "TOP LUXURY CAR RENTAL EMIRATES",
+    "desc": "Best sports car & supercar rental Emirates, Exclusive offers on luxury car rental Emirates Cheap price",
+    "desc2": "RENT A CAR EMIRATES CATALOG "
+  },
+  "home_about": {
+    "title": "LUXURY CAR RENTAL IN EMIRATES",
+    "title2": "What are the requirements to rent a luxury car in Dubai?",
+    "title3": "SPORTS CAR RENTAL DUBAI",
+    "title4": "SUPERCAR RENTAL DUBAI",
+    "desc": "Are you ready to feel the adrenaline rush and unleash your inner speed demon? Look no further than Terra luxury car rental Dubai, the city where dreams become reality. In this ultimate guide to sports car rental Dubai, we will take you on a thrilling journey through the world of luxury and supercar rental Dubai. Imagine cruising down the iconic Sheikh Zayed Road in a sleek and powerful sports car rental Dubai style, turning heads and leaving everyone in awe of your style. Whether you are a car enthusiast or simply looking to",
+    "desc2": "To rent a car Dubai, it&apos;s enough to have a valid driving license and enough funds. & you&apos;ll need to show your foreign passport and prove that you have come of age and have driving experience.The age limit and the requirements for the license depend on where you&apos;re from. Visitors from Europe, the UK, the US and the Middle East can drive with their national licenses. People from other parts of the world need an international license. The age limit for the driver might vary from 21 to 25 years. Please get in touch with us before placing an order to discuss your individual situation.Cars in the UAE have steering wheels on the left side. Drivers stick to the right side of the road.If needed, you can add a second driver to your rental contract. The requirements for this person will be the same as for the first driver. If you let someone who isn&apos;t mentioned in your rental contract take a place behind the wheel, you can get a fine.The duration of a premium car rental in Dubai can vary from one day to several weeks. Discounts are common for luxury car rental Dubai monthly car rental plan. Use this chance to have fun, increase your high social status and please your dearest and nearest!Please avoid smoking inside the rented vehicle.",
+    "desc3": "Terra L L C a Car is a Top Luxury Car Rental Dubai based company, We offer sports car rental, and supercar rental in Dubai. The best luxury car rental process provided by our fleet . We own a diverse range of luxury supercar rental and sports car rental Dubai style , including Rolls Royce, Lamborghini, Maserati, Ferrari, Mercedes Benz, Porsche, and Range Rover, to name a few. Rent a car with the best car rental company in Dubai.",
+    "dsc4": "Hire the latest supercar",
+    "btn": "ALL CARS"
+  },
+  "home_faq":{
+    "title1": "What is the minimum age requirement to rent a car in Dubai?",
+    "title2": "How much is the insurance limit on luxury car rentals in Dubai?",
+    "title3": "What are the driving licenses that can be used in Arab countries?",
+    "title4": "Can anyone else drive the car I rent?",
+    "desc1": "Drivers under 25 must have a license for a minimum of three years. The same applies to the person(s) whose name(s) is/are mentioned as an additional driver.",
+    "desc2": "The insurance limit depends on the car type and rental company terms. Check with the specific provider for details.",
+    "desc3": "A valid international driving license or a license from Gulf Cooperation Council countries is typically accepted.",
+    "desc4": "Yes, provided they are registered as an additional driver and meet the minimum driving requirements.",
+    "follow": "FOLLOW US ON INSTAGRAM",
+    "location": "LOCATION",
+    "city": "CITY"
+  }
 }
