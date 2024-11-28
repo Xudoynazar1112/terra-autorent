@@ -1,18 +1,36 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="bg-gray-900 w-full text-white flex flex-col items-start md:px-40 px-10 py-10">
-      <p className="text-gray-400">Luxury Cars for Rent in Dubai / Contacts</p>
-      <p className="text-4xl py-10">HAVE ANY QUESTIONS?</p>
-      <p className="text-gray-400">We will be glad to help</p>
+      <p className="text-gray-400">
+        {/* Luxury Cars for Rent in Dubai / Contacts */}
+        {t("contact.direction")}
+      </p>
+      <p className="text-4xl py-10">
+        {/* HAVE ANY QUESTIONS? */}
+        {t("contact.title1")}
+      </p>
+      <p className="text-gray-400">
+        {/* We will be glad to help */}
+        {t("contact.direction2")}
+        </p>
       <div className="flex flex-col gap-3 items-start border-b w-full pb-8">
-        <p className="text-4xl pl-7 mt-16">Head office</p>
+        <p className="text-4xl pl-7 mt-16">
+          {/* Head office */}
+          {t("contact.title2")}
+          </p>
         <div className="flex gap-3">
           <FaLocationDot />
-          <p>Elite 3 Sports City, Dubai 26W8 24J, United Arab Emirates</p>
+          <p>
+            {/* Elite 3 Sports City, Dubai 26W8 24J, United Arab Emirates */}
+            {t("contact.location")}
+            </p>
         </div>
         <div className="flex gap-3">
           <FaPhone />

@@ -42,7 +42,7 @@ const Navbar = () => {
           <input
             type="text"
             className="px-5 rounded-xl h-12 w-[25rem] bg-gradient-to-r from-gray-700 to-black mr-6 text-white md:block hidden "
-            placeholder="Search ..."
+            placeholder={t("navbar.search")}
           />
           <Link to={"/"}>
             <img src="/images/logo.png" alt="logo" className="w-32" />

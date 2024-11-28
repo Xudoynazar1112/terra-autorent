@@ -6,8 +6,11 @@ import HomeAbout from "../../components/home/HomeAbout";
 import HomeFAQ from "../../components/home/HomeFAQ";
 import CarsPage from "../CarsPage/CarsPage";
 import BrandsPage from "../brands/BrandsPage";
+import { useTranslation } from "react-i18next";
+
 
 const Carousel = () => {
+
   const images = [
     "/cars/car1.png", // Replace with your image URLs
     "/cars/car2.png", // Replace with your image URLs
@@ -124,22 +127,43 @@ const HomePage = () => {
   useEffect(() => {
     api.get("/brands").then((res) => setBrands(res?.data?.data));
   }, []);
+  const { t, i18n } = useTranslation();
+  
 
   return (
     <div className="bg-black w-full text-white">
       <h2 className="mt-32 text-[2.5rem] font-semibold">
-        TOP LUXURY CAR RENTAL EMIRATES
+        {/* TOP LUXURY CAR RENTAL EMIRATES */}
+        {t ("home_page.title1")}
       </h2>
       <p className="text-[2.5rem]">№1</p>
       <p className="my-5">
-        Best sports car & supercar rental Emirates, Exclusive offers on luxury
-        car rental Emirates Cheap price
+        {/* Best sports car & supercar rental Emirates, Exclusive offers on luxury
+        car rental Emirates Cheap price */}
+        {t ("home_page.desc")}
       </p>
       <p className="cursor-pointer">
-        RENT A CAR EMIRATES CATALOG <span>»</span>
+        {/* RENT A CAR EMIRATES CATALOG  */}
+        {t ("home_page.desc2")}
+        <span>»</span>
       </p>
-      <Carousel />
-      <BrandsPage/>
+      <div className="flex gap-20 overflow-x-auto bg-gradient-to-b from-black to-slate-400">
+        <img src="/cars/car1.png" alt="car" />
+        <img src="/cars/car2.png" alt="car" />
+        <img src="/cars/car3.png" alt="car" />
+        <img src="/cars/car4.png" alt="car" />
+      </div>
+      <div className="bg-gradient-to-b from-slate-400 to-black">
+        <h3>Brands</h3>
+        <div className="grid grid-cols-6 gap-10 overflow-x-auto mx-28">
+        {brands.map((item, i) => (
+          <div key={i} className="flex flex-col items-center gap-5 rounded bg-slate-900 p-10">
+            <img src={`https://realauto.limsa.uz/api/uploads/images/${item?.image_src}`} className="w-[3rem]" alt={item?.title} />
+            <p>{item?.title}</p>
+          </div>
+        ))}
+        </div>
+      </div>
       <HomeCars />
       <HomeServices />
       <HomeAbout />

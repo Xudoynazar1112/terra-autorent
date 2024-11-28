@@ -1,28 +1,35 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 const HomeAbout = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <section className="bg-[#272933] relative">
         <div className="text-start text-white py-14 md:px-36 px-8 relative z-[1]">
           <h3 className="md:text-[3rem] text-2xl font-semibold">
-            LUXURY CAR RENTAL IN EMIRATES
+            {/* LUXURY CAR RENTAL IN EMIRATES */}
+            {t ("home_about.title")}
           </h3>
           <p className="md:leading-[30px] md:text-base text-sm">
-            Are you ready to feel the adrenaline rush and unleash your inner
+            {/* Are you ready to feel the adrenaline rush and unleash your inner
             speed demon? Look no further than Terra luxury car rental Dubai, the
             city where dreams become reality. In this ultimate guide to sports
             car rental Dubai, we will take you on a thrilling journey through
             the world of luxury and supercar rental Dubai. Imagine cruising down
             the iconic Sheikh Zayed Road in a sleek and powerful sports car
             rental Dubai style, turning heads and leaving everyone in awe of
-            your style. Whether you are a car enthusiast or simply looking to
+            your style. Whether you are a car enthusiast or simply looking to */}
+            {t ("home_about.desc")}
           </p>
           <h3 className="md:text-[3rem] text-2xl font-semibold mt-[30px]">
-            What are the requirements to rent a luxury car in Dubai?
+            {/* What are the requirements to rent a luxury car in Dubai? */}
+            {t ("home_about.title2")}
           </h3>
           <p className="md:leading-[30px] md:text-base text-sm">
-            To rent a car Dubai, it&apos;s enough to have a valid driving
+            {/* To rent a car Dubai, it&apos;s enough to have a valid driving
             license and enough funds. & you&apos;ll need to show your foreign
             passport and prove that you have come of age and have driving
             experience.The age limit and the requirements for the license depend
@@ -40,7 +47,8 @@ const HomeAbout = () => {
             in Dubai can vary from one day to several weeks. Discounts are
             common for luxury car rental Dubai monthly car rental plan. Use this
             chance to have fun, increase your high social status and please your
-            dearest and nearest!Please avoid smoking inside the rented vehicle.
+            dearest and nearest!Please avoid smoking inside the rented vehicle. */}
+            {t ("home_about.desc2")}
           </p>
         </div>
         <img
@@ -69,19 +77,22 @@ const HomeAbout = () => {
         <div className="md:w-[33%] md:pr-20 relative">
           <div className="z-20 flex flex-col items-start">
             <h3 className="md:text-[2.3rem] text-2xl text-start md:leading-[2.5rem] tracking-widest">
-              SPORTS CAR RENTAL DUBAI
+              {/* SPORTS CAR RENTAL DUBAI */}
+              {t ("home_about.title3")}
             </h3>
             <p className="text-start md:text-[1.3rem] text-lg py-7">
-              Terra L L C a Car is a Top Luxury Car Rental Dubai based company,
+              {/* Terra L L C a Car is a Top Luxury Car Rental Dubai based company,
               We offer sports car rental, and supercar rental in Dubai. The best
               luxury car rental process provided by our fleet . We own a diverse
               range of luxury supercar rental and sports car rental Dubai style
               , including Rolls Royce, Lamborghini, Maserati, Ferrari, Mercedes
               Benz, Porsche, and Range Rover, to name a few. Rent a car with the
-              best car rental company in Dubai.
+              best car rental company in Dubai. */}
+              {t ("home_about.title4")}
             </p>
             <Link to={"/cars"} className="text-start text-white">
-              ALL CARS
+              {/* ALL CARS */}
+              {t ("home_about.btn")}
             </Link>
           </div>
           <img
@@ -94,10 +105,17 @@ const HomeAbout = () => {
       <div className="flex md:flex-row flex-col bg-gray-900 gap-10">
         <div className="bg-gray-800 bg-[url('/images/about-car.webp')] bg-no-repeat bg-cover bg-center md:w-[50%] h-[18rem]"></div>
         <div className="flex flex-col items-start py-10 md:px-0 px-3">
-          <h4 className="md:text-5xl text-3xl pb-3 font-semibold">SUPERCAR RENTAL DUBAI</h4>
-          <p className="text-lg">Hire the latest supercar</p>
+          <h4 className="md:text-5xl text-3xl pb-3 font-semibold">
+            {/* SUPERCAR RENTAL DUBAI */}
+            {t ("home_about.title4")}
+            </h4>
+          <p className="text-lg">
+            {/* Hire the latest supercar */}
+            {t ("home_about.desc4")}
+            </p>
           <Link to={"/cars"} className="text-start text-white hover:text-red-500 transition-all mt-12">
-            ALL CARS
+            {/* ALL CARS */}
+            {t ("home_about.btn")}
           </Link>
         </div>
       </div>

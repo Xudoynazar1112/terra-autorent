@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import terra from "../../assets/icons/terra.png";
 import { FaWhatsapp } from "react-icons/fa";
-import { RiTelegramLine } from "react-icons/ri";
+import { RiTelegramLine } from "react-icons/ri";import { useTranslation } from "react-i18next";
+
 
 const CarsPage = () => {
+  const { t, i18n } = useTranslation();
+
   const [cars, setCars] = useState([]);
   const [uniqueType, setUniqueType] = useState([]);
   const [uniqueBrand, setUniqueBrand] = useState([]);
@@ -163,7 +166,8 @@ const CarsPage = () => {
           Show Filters
         </button>
         <p className="text-white mb-8 text-3xl">
-          Luxury Cars for Rent in Dubai / Hire the latest supercar
+          {/* Luxury Cars for Rent in Dubai / Hire the latest supercar */}
+          {t ("cars_page.title")}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {filteredCars?.map((item) => (
