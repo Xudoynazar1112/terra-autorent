@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../shared/api/api";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [categories, setCategories] = useState({}); // Grouped cars by category
@@ -52,17 +53,17 @@ const Footer = () => {
             <div className="flex flex-col gap-2 items-start">
               <p className="md:text-3xl text-md mb-3">Cars</p>
               {Object.keys(categories).map((car, i) => (
-                <p key={i} className="text-gray-500 text-start">
+                <Link to={'/cars'} key={i} className="text-gray-500 text-start hover:text-white transition-all">
                   {car}
-                </p>
+                </Link>
               ))}
             </div>
             <div>
               <ul className="flex flex-col justify-between items-start h-[15rem]">
-                <li>Blog</li>
-                <li>Service</li>
+                <li><Link to={'/blog'} className="text-white cursor-pointer hover:text-red-600 transition-all">Blog</Link></li>
+                <li><Link to={'/services'} className="text-white cursor-pointer hover:text-red-600 transition-all">Service</Link></li>
                 <li className="text-start">
-                  <p>Contact</p>
+                  <Link to={'/contact'} className="text-white cursor-pointer hover:text-red-600 transition-all">Contact</Link>
                   <div className="flex flex-col">
                     <span className="text-gray-500">
                       Elite 3 Sports City, Dubai 26W8 24J, United Arab Emirates
@@ -76,8 +77,8 @@ const Footer = () => {
             <div className="h-full flex flex-col justify-between px-3">
               <ul className="text-start flex flex-col gap-4">
                 <li>About</li>
-                <li className="text-gray-500">Our team</li>
-                <li className="text-gray-500">FAQ</li>
+                <li className="text-gray-500 cursor-pointer hover:text-white transition-all">Our team</li>
+                <li className="text-gray-500 cursor-pointer"><Link to={'#faq'} className="text-gray-500 hover:text-white transition-all">FAQ</Link></li>
               </ul>
               <div>
                 <p className="text-start mb-3">Follow us</p>

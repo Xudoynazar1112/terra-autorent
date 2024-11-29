@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../../shared/api/api";
+import { Link } from "react-router-dom";
 
 const HomeFAQ = () => {
   const [locate, setLocate] = useState([])
@@ -9,7 +10,7 @@ const HomeFAQ = () => {
     api.get("/cities").then((res) => setCity(res?.data?.data));
   }, []);
   return (
-    <div className="pt-16 bg-zinc-900">
+    <div className="pt-16 bg-zinc-900" id="faq">
       <div className="bg-[url('/images/faq.png')] bg-center bg-contain bg-no-repeat saturate-50">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-center text-3xl font-bold mb-8">FAQ</h2>
@@ -88,13 +89,13 @@ const HomeFAQ = () => {
         <div className="flex flex-col items-start">
           <h4 className="text-4xl mb-5">LOCATION</h4>
           {locate.map((place, i) => (
-            <p key={i} className="text-gray-500 text-lg mb-3">{place.name}</p>
+            <Link to={'/cars'} key={i} className="text-gray-500 text-lg mb-3">{place.name}</Link>
           ))}
         </div>
         <div className="flex flex-col items-start">
           <h4 className="text-4xl mb-5">CITY</h4>
           {city.map((place, i) => (
-            <p key={i} className="text-gray-500 text-lg mb-3">{place.name}</p>
+            <Link to={'/cars'} key={i} className="text-gray-500 text-lg mb-3">{place.name}</Link>
           ))}
         </div>
       </div>
